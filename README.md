@@ -1,7 +1,7 @@
 # Solidity-for-EVM
-Solidity fundamentals review for reference/potential use in EVM (Ethereum Virtual Machine) product development and management.
+Solidity fundamentals review for reference/potential use within the EVM (Ethereum Virtual Machine), specially for product development and management purposes.
 
-I'm going through Alchemy University's Ethereum Developer Bootcamp (https://www.alchemy.com/university/courses/ethereum), and a considerable portion of the whole Bootcamp is dedicated to Solidity. This is the whole curriculum from reference:
+Learning path: Alchemy University's Ethereum Developer Bootcamp (https://www.alchemy.com/university/courses/ethereum). A considerable portion of the whole bootcamp is dedicated to Solidity. This is the whole curriculum for reference:
 
 Syllabus
 
