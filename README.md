@@ -3,7 +3,7 @@ Solidity fundamentals review for reference/potential use within the EVM (Ethereu
 
 Learning path: Alchemy University's Ethereum Developer Bootcamp (https://www.alchemy.com/university/courses/ethereum). A considerable portion of the whole bootcamp is dedicated to Solidity. This is the whole curriculum for reference:
 
-Syllabus
+**Syllabus**
 
 **1) Blockchain Cryptography: Learning Core Blockchain Cryptography.**
 The First Primitive: Blockchain and Cryptographic Hashes.
