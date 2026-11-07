@@ -6,28 +6,6 @@ Solidity looks like JS at a glance (curly braces, semicolons, C-style syntax) bu
 
 ---
 
-## 0. First, About That `mapping` Line
-
-Since this is what prompted this doc — let's kill the confusion immediately:
-
-```solidity
-mapping(address => uint) balances;
-```
-
-This is **not** an arrow function, and it's **not** related to JS's `.map()` array method either, despite the shared word "map." `mapping` is Solidity's built-in **key-value store type** — closest to a JS `Map`/`Object` or a Python `dict`. The `=>` here means "maps to," describing the *type relationship* between keys and values — it is declaring a type, not executing any logic.
-
-| | Solidity | JS equivalent (closest concept) | Python equivalent (closest concept) |
-|---|---|---|---|
-| Declare | `mapping(address => uint) public balances;` | `const balances = {};` / `new Map()` | `balances = {}` |
-| Read | `balances[someAddress]` | `balances[someAddress]` | `balances[some_address]` |
-| Write | `balances[someAddress] = 100;` | `balances[someAddress] = 100;` | `balances[some_address] = 100` |
-| Default value for a missing key | Returns the type's zero-value (`0` for `uint`, `false` for `bool`, etc.) — **never throws** | `undefined` | Raises `KeyError` |
-| Can you iterate over all keys? | **No** — no built-in way to list keys or check "does this key exist" | Yes (`Object.keys()`, `for...in`) | Yes (`.keys()`, `for k in dict`) |
-
-That last row is the real gotcha to internalize early: a Solidity `mapping` is deliberately *not* enumerable. This is a gas/storage design decision, not a missing feature — Solidity avoids operations whose cost scales with unknown data size. If you need to list all keys, you maintain a separate array of keys alongside the mapping yourself — a very common pattern you'll see everywhere in real contracts.
-
----
-
 ## 1. File Structure Basics
 
 ```solidity
@@ -252,4 +230,22 @@ contract MyToken is Ownable {
 
 ### Key Takeaway
 
-> Solidity borrows JS's *look* (braces, semicolons, `function`, `contract...is...` echoing `class...extends`) but not its *behavior*. The concepts that don't map to anything in JS or Python — visibility modifiers, `view`/`pure`, `msg.sender`, the storage-vs-memory cost distinction, and `require`'s whole-transaction revert — are exactly the parts worth studying deliberately rather than pattern-matching from prior languages, since guessing by syntax resemblance alone is exactly what turned `mapping(address => uint)` into an apparent arrow function at first glance.
+> Solidity borrows JS's *look* (braces, semicolons, `function`, `contract...is...` echoing `class...extends`) but not its *behavior*. The concepts that don't map to anything in JS or Python — visibility modifiers, `view`/`pure`, `msg.sender`, the storage-vs-memory cost distinction, and `require`'s whole-transaction revert — are exactly the parts worth studying deliberately rather than pattern-matching from prior languages.
+
+Guessing by syntax resemblance alone can for example turn `mapping(address => uint)` into an apparent arrow function at first glance:
+
+```solidity
+mapping(address => uint) balances;
+```
+
+This is **not** an arrow function, and it's **not** related to JS's `.map()` array method either, despite the shared word "map." `mapping` is Solidity's built-in **key-value store type** — closest to a JS `Map`/`Object` or a Python `dict`. The `=>` here means "maps to," describing the *type relationship* between keys and values — it is declaring a type, not executing any logic.
+
+| | Solidity | JS equivalent (closest concept) | Python equivalent (closest concept) |
+|---|---|---|---|
+| Declare | `mapping(address => uint) public balances;` | `const balances = {};` / `new Map()` | `balances = {}` |
+| Read | `balances[someAddress]` | `balances[someAddress]` | `balances[some_address]` |
+| Write | `balances[someAddress] = 100;` | `balances[someAddress] = 100;` | `balances[some_address] = 100` |
+| Default value for a missing key | Returns the type's zero-value (`0` for `uint`, `false` for `bool`, etc.) — **never throws** | `undefined` | Raises `KeyError` |
+| Can you iterate over all keys? | **No** — no built-in way to list keys or check "does this key exist" | Yes (`Object.keys()`, `for...in`) | Yes (`.keys()`, `for k in dict`) |
+
+That last row is the real gotcha to internalize early: a Solidity `mapping` is deliberately *not* enumerable. This is a gas/storage design decision, not a missing feature — Solidity avoids operations whose cost scales with unknown data size. If you need to list all keys, you maintain a separate array of keys alongside the mapping yourself — a very common pattern you'll see everywhere in real contracts.
