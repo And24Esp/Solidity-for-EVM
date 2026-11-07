@@ -56,4 +56,4 @@ Libraries: Learn about Solidity Libraries.
 Upgrading Contracts: Learn Frameworks for Upgrading Contracts.
 Governance: How Smart Contract Protocols are Governed.
 
-**8) EVM Chain Certification.** Submit a project demonstrating some/most of the skills learned at the bootcamp (ideally showing concepts from sections 6 and 7, whoch do not have a final assignemnt/project).
+> **8) EVM Chain Certification.** Submit a project demonstrating some/most of the skills learned at the bootcamp (ideally showing concepts from sections 6 and 7, whoch do not have a final assignemnt/project).
