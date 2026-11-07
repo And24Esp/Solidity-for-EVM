@@ -3,7 +3,7 @@ Solidity fundamentals review for reference/potential use within the EVM (Ethereu
 
 Solidity is a high-level language that compiles down into bytecode (raw hexadecimal/binary instructions containing raw data and low-level opcodes detailed in https://github.com/crytic/evm-opcodes) which is run directly on the EVM. Its more low-level than JavaScript, which means it hides less of the underlying machine details (every operation on the EVM and everything we store on the blockchain costs money, so it becomes expensive to be inefficient on these regards).
 
-Learning path: Alchemy University's Ethereum Developer Bootcamp (https://www.alchemy.com/university/courses/ethereum). A considerable portion of the whole bootcamp is dedicated to Solidity. This is the whole curriculum for reference:
+Main learning path: Alchemy University's Ethereum Developer Bootcamp (https://www.alchemy.com/university/courses/ethereum). The last half (section 4 to section 7) of the bootcamp is dedicated to Solidity. This is the whole bootcamp's curriculum for reference:
 
 **Syllabus**
 
