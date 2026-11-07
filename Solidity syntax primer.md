@@ -228,7 +228,7 @@ contract MyToken is Ownable {
 
 ---
 
-### Key Takeaway
+## Key Takeaway
 
 > Solidity borrows JS's *look* (braces, semicolons, `function`, `contract...is...` echoing `class...extends`) but not its *behavior*. The concepts that don't map to anything in JS or Python — visibility modifiers, `view`/`pure`, `msg.sender`, the storage-vs-memory cost distinction, and `require`'s whole-transaction revert — are exactly the parts worth studying deliberately rather than pattern-matching from prior languages.
 
@@ -248,4 +248,4 @@ This is **not** an arrow function, and it's **not** related to JS's `.map()` arr
 | Default value for a missing key | Returns the type's zero-value (`0` for `uint`, `false` for `bool`, etc.) — **never throws** | `undefined` | Raises `KeyError` |
 | Can you iterate over all keys? | **No** — no built-in way to list keys or check "does this key exist" | Yes (`Object.keys()`, `for...in`) | Yes (`.keys()`, `for k in dict`) |
 
-That last row is the real gotcha to internalize early: a Solidity `mapping` is deliberately *not* enumerable. This is a gas/storage design decision, not a missing feature — Solidity avoids operations whose cost scales with unknown data size. If you need to list all keys, you maintain a separate array of keys alongside the mapping yourself — a very common pattern you'll see everywhere in real contracts.
+> That last row is the real gotcha to internalize early: a Solidity `mapping` is deliberately *not* enumerable. This is a gas/storage design decision, not a missing feature — Solidity avoids operations whose cost scales with unknown data size. If you need to list all keys, you maintain a separate array of keys alongside the mapping yourself — a very common pattern you'll see everywhere in real contracts.
