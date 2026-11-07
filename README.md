@@ -7,28 +7,28 @@ Main learning path: Alchemy University's Ethereum Developer Bootcamp (https://ww
 
 **Syllabus**
 
-**1) Blockchain Cryptography: Learning Core Blockchain Cryptography.**
-The First Primitive: Blockchain and Cryptographic Hashes.
-Digital Signatures: Verify a Signature Without Revealing a Private Key.
-Mining & Proof of Work: Intro to Blockchain Consensus Mechanisms.
-Blockchain Network: How Blockchain Functions as a Network.
-Week 1 Project: Build a Web App using ECDSA.
+> **1) Blockchain Cryptography: Learning Core Blockchain Cryptography.**
+> The First Primitive: Blockchain and Cryptographic Hashes.
+> Digital Signatures: Verify a Signature Without Revealing a Private Key.
+> Mining & Proof of Work: Intro to Blockchain Consensus Mechanisms.
+> Blockchain Network: How Blockchain Functions as a Network.
+> Week 1 Project: Build a Web App using ECDSA.
 
-**2) Blockchain Storage: Blockchain Balances and Data Structures.**
-Keeping Track of Blockchain User State: How Do Blockchains Keep Track of User State.
-Tree Data Structures: Learning to Build and Work with Trees.
-Blockchain Data Storage: Understanding data storage on blockchains.
-Week 2 Assignment: Merkle Tree Gift List.
+> **2) Blockchain Storage: Blockchain Balances and Data Structures.**
+> Keeping Track of Blockchain User State: How Do Blockchains Keep Track of User State.
+> Tree Data Structures: Learning to Build and Work with Trees.
+> Blockchain Data Storage: Understanding data storage on blockchains.
+> Week 2 Assignment: Merkle Tree Gift List.
 
-**3) Ethereum: Diving into the State Machine.**
-Ethereum Features: High Level Overview of Ethereum.
-Reading Data from Ethereum: Ethereum Clients and the JSON RPC API.
-Ethereum Transactions: Transactions = Signed JSON-RPC Requests.
-Front-End Libraries: Ethereum Front-End Libraries.
-Week 3 Assignment: Build your own Ethereum Block explorer.
+> **3) Ethereum: Diving into the State Machine.**
+> Ethereum Features: High Level Overview of Ethereum.
+> Reading Data from Ethereum: Ethereum Clients and the JSON RPC API.
+> Ethereum Transactions: Transactions = Signed JSON-RPC Requests.
+> Front-End Libraries: Ethereum Front-End Libraries.
+> Week 3 Assignment: Build your own Ethereum Block explorer.
 
 **4) Smart Contract Basics: Diving into Solidity Syntax and Data Types.**
-Solidity Syntax: Learning the Basics of Solidity.
+Solidity syntax, version control, contract structure, control structures, scoping, access control and static typing.
 Functions: Solidity Functions & Visibility.
 Smart Contract Communication: How Do We Talk to Smart Contracts.
 Intro to Hardhat: Ethereum development environment to compile, deploy, test, and debug smart contracts.
