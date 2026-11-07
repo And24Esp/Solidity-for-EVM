@@ -29,8 +29,8 @@ Main learning path: Alchemy University's Ethereum Developer Bootcamp (https://ww
 
 **4) Smart Contract Basics: Diving into Solidity Syntax and Data Types.**
 Solidity syntax, version control, contract structure, control structures, scoping, access control and static typing.
-Functions: Solidity Functions & Visibility.
-Smart Contract Communication: How Do We Talk to Smart Contracts.
+Functions sintax (including use of `pure` and `view` keywords) and visibility (public, internal, external, private).
+Smart Contract Communication: Interaction process, compilation (Application Binary Interface (ABI) and bytecode production), and deployment (transaction receipt and receipt trie production).
 Intro to Hardhat: Ethereum development environment to compile, deploy, test, and debug smart contracts.
 Address Interactions: Contracts Communicating with Addresses.
 Practice Solidity: Put your Solidity skills to the test.
