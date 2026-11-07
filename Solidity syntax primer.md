@@ -230,7 +230,7 @@ contract MyToken is Ownable {
 
 ## Key Takeaway
 
-> Solidity borrows JS's *look* (braces, semicolons, `function`, `contract...is...` echoing `class...extends`) but not its *behavior*. The concepts that don't map to anything in JS or Python — visibility modifiers, `view`/`pure`, `msg.sender`, the storage-vs-memory cost distinction, and `require`'s whole-transaction revert — are exactly the parts worth studying deliberately rather than pattern-matching from prior languages.
+Solidity borrows JS's *look* (braces, semicolons, `function`, `contract...is...` echoing `class...extends`) but not its *behavior*. The concepts that don't map to anything in JS or Python — visibility modifiers, `view`/`pure`, `msg.sender`, the storage-vs-memory cost distinction, and `require`'s whole-transaction revert — are exactly the parts worth studying deliberately rather than pattern-matching from prior languages.
 
 Guessing by syntax resemblance alone can for example turn `mapping(address => uint)` into an apparent arrow function at first glance:
 
